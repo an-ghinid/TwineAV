@@ -77,7 +77,7 @@ Tiddler
 p33
 (dp34
 g18
-Vtry {\u000a  version.extensions['htmlaudio'] = { \u000a    major:1, minor:0, revision:0 \u000a  };\u000a  macros['htmlaudiov1'] = {\u000a    handler: function(place, macroName, params, parser) {\u000a      playAudio(params[0])\u000a    },\u000a    init: function() { },\u000a  };\u000a} catch(e) {\u000a  throwError(place,"audio Setup Error: "+e.message); \u000a}\u000a\u000atry {\u000a  version.extensions['htmlvideo'] = { \u000a    major:1, minor:0, revision:0 \u000a  };\u000a  macros['htmlvideov1'] = {\u000a    handler: function(place, macroName, params, parser) {\u000a      playVideo(params[0], place)\u000a    },\u000a    init: function() { },\u000a  };\u000a} catch(e) {\u000a  throwError(place,"video Setup Error: "+e.message); \u000a}\u000a\u000a\u000amacros['loadJS'] =\u000a{\u000a	handler: function(place, object, parameters)\u000a	{\u000a		var se = document.createElement("script");\u000a		se.type = 'text/javascript';\u000a		se.src = parameters[0];\u000a		var hT = document.getElementsByTagName("HEAD")[0];\u000a		hT.appendChild(se);\u000a		if(se.innerText) {eval(se.innerText);}\u000a		else {eval(se.textContent);}\u000a	}\u000a}
+Vtry {\u000a  version.extensions['htmlaudio'] = { \u000a    major:1, minor:0, revision:0 \u000a  };\u000a  macros['audio'] = {\u000a    handler: function(place, macroName, params, parser) {\u000a      playAudio(params[0])\u000a    },\u000a    init: function() { },\u000a  };\u000a} catch(e) {\u000a  throwError(place,"audio Setup Error: "+e.message); \u000a}\u000a\u000atry {\u000a  version.extensions['htmlvideo'] = { \u000a    major:1, minor:0, revision:0 \u000a  };\u000a  macros['video'] = {\u000a    handler: function(place, macroName, params, parser) {\u000a      playVideo(params[0], place)\u000a    },\u000a    init: function() { },\u000a  };\u000a} catch(e) {\u000a  throwError(place,"video Setup Error: "+e.message); \u000a}\u000a\u000a\u000amacros['loadJS'] =\u000a{\u000a	handler: function(place, object, parameters)\u000a	{\u000a		var se = document.createElement("script");\u000a		se.type = 'text/javascript';\u000a		se.src = parameters[0];\u000a		var hT = document.getElementsByTagName("HEAD")[0];\u000a		hT.appendChild(se);\u000a		if(se.innerText) {eval(se.innerText);}\u000a		else {eval(se.textContent);}\u000a	}\u000a}
 p35
 sg20
 (lp36
@@ -116,7 +116,7 @@ Tiddler
 p45
 (dp46
 g18
-V<<htmlvideov1 "test.ogv">>\u000a\u000a[[test2|test2]]
+V<<video "test.ogv">>\u000a\u000a[[test2|test2]]
 p47
 sg20
 (lp48

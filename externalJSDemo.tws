@@ -5,7 +5,7 @@ VC:\u005cUsers\u005cDave\u005cDocuments\u005cCoding\u005cTwine Stuff\u005ctest.h
 p2
 sS'saveDestination'
 p3
-S'C:\\Users\\Dave\\Documents\\Coding\\Twine Stuff\\externalJSDemo.tws'
+S'C:\\Users\\Dave\\Documents\\GitHub\\TwineAV\\externalJSDemo.tws'
 p4
 sS'target'
 p5
@@ -66,7 +66,7 @@ VStart
 p30
 sbsa(dp31
 g12
-I01
+I00
 sg13
 (lp32
 I424
@@ -105,7 +105,7 @@ Vfunctions
 p42
 sbsa(dp43
 g12
-I00
+I01
 sg13
 (lp44
 I26
@@ -116,7 +116,7 @@ Tiddler
 p45
 (dp46
 g18
-V<<htmlvideov1 "test.mp4">>\u000a\u000a[[test2|test2]]
+V<<htmlvideov1 "test.ogv">>\u000a\u000a[[test2|test2]]
 p47
 sg20
 (lp48

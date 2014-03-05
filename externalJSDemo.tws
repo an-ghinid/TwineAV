@@ -1,0 +1,183 @@
+(dp0
+S'buildDestination'
+p1
+VC:\u005cUsers\u005cDave\u005cDocuments\u005cCoding\u005cTwine Stuff\u005ctest.html
+p2
+sS'saveDestination'
+p3
+S'C:\\Users\\Dave\\Documents\\Coding\\Twine Stuff\\externalJSDemo.tws'
+p4
+sS'target'
+p5
+S'sugarcane'
+p6
+sS'storyPanel'
+p7
+(dp8
+S'widgets'
+p9
+(lp10
+(dp11
+S'selected'
+p12
+I00
+sS'pos'
+p13
+(lp14
+I10
+aI10
+asS'passage'
+p15
+(itiddlywiki
+Tiddler
+p16
+(dp17
+S'text'
+p18
+VHello World.\u000a<<loadJS "audio.js">>\u000a\u000a[[test|test]]
+p19
+sS'tags'
+p20
+(lp21
+sS'created'
+p22
+ctime
+struct_time
+p23
+((I2014
+I1
+I22
+I2
+I52
+I42
+I2
+I22
+I0
+tp24
+(dp25
+tp26
+Rp27
+sS'modified'
+p28
+g27
+sS'title'
+p29
+VStart
+p30
+sbsa(dp31
+g12
+I01
+sg13
+(lp32
+I424
+aI152
+asg15
+(itiddlywiki
+Tiddler
+p33
+(dp34
+g18
+Vtry {\u000a  version.extensions['htmlaudio'] = { \u000a    major:1, minor:0, revision:0 \u000a  };\u000a  macros['htmlaudiov1'] = {\u000a    handler: function(place, macroName, params, parser) {\u000a      playAudio(params[0])\u000a    },\u000a    init: function() { },\u000a  };\u000a} catch(e) {\u000a  throwError(place,"audio Setup Error: "+e.message); \u000a}\u000a\u000atry {\u000a  version.extensions['htmlvideo'] = { \u000a    major:1, minor:0, revision:0 \u000a  };\u000a  macros['htmlvideov1'] = {\u000a    handler: function(place, macroName, params, parser) {\u000a      playVideo(params[0], place)\u000a    },\u000a    init: function() { },\u000a  };\u000a} catch(e) {\u000a  throwError(place,"video Setup Error: "+e.message); \u000a}\u000a\u000a\u000amacros['loadJS'] =\u000a{\u000a	handler: function(place, object, parameters)\u000a	{\u000a		var se = document.createElement("script");\u000a		se.type = 'text/javascript';\u000a		se.src = parameters[0];\u000a		var hT = document.getElementsByTagName("HEAD")[0];\u000a		hT.appendChild(se);\u000a		if(se.innerText) {eval(se.innerText);}\u000a		else {eval(se.textContent);}\u000a	}\u000a}
+p35
+sg20
+(lp36
+Vscript
+p37
+asg22
+g23
+((I2014
+I1
+I22
+I2
+I52
+I55
+I2
+I22
+I0
+tp38
+(dp39
+tp40
+Rp41
+sg28
+g41
+sg29
+Vfunctions
+p42
+sbsa(dp43
+g12
+I00
+sg13
+(lp44
+I26
+aI159
+asg15
+(itiddlywiki
+Tiddler
+p45
+(dp46
+g18
+V<<htmlvideov1 "test.mp4">>\u000a\u000a[[test2|test2]]
+p47
+sg20
+(lp48
+sg22
+g23
+((I2014
+I1
+I22
+I3
+I10
+I19
+I2
+I22
+I0
+tp49
+(dp50
+tp51
+Rp52
+sg28
+g52
+sg29
+Vtest
+p53
+sbsa(dp54
+g12
+I00
+sg13
+(lp55
+I253
+aI275
+asg15
+(itiddlywiki
+Tiddler
+p56
+(dp57
+g18
+VYou made it!
+p58
+sg20
+(lp59
+sg22
+g23
+((I2014
+I1
+I22
+I3
+I19
+I55
+I2
+I22
+I0
+tp60
+(dp61
+tp62
+Rp63
+sg28
+g63
+sg29
+Vtest2
+p64
+sbsasS'scale'
+p65
+I1
+ss.
